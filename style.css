@@ -150,13 +150,71 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.edu-box {
+.edu-box,
+.timeline {
     background-color: var(--background);
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.timeline {
+    /*width: 80%;*/
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.section .timeline {
+    width: 90%;
+    margin-top: 1rem;
+    max-width: 1200px;
+}
+
+.timeline-horizontal {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.25rem;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    /* Firefox */
+    justify-content: center;
+}
+
+.timeline-horizontal::-webkit-scrollbar {
+    display: none;
+    /* Chrome */
+}
+
+.timeline-event {
+    flex: 0 0 160px;
+    font-size: 0.70rem;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.timeline-event .event-date {
+    font-weight: bold;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-event h3 {
+    margin: 0.1rem 0;
+    font-size: 1.1rem;
+}
+
+.event-content p {
+    text-align: center;
 }
 
 /* Responsive Design */
