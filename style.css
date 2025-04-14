@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #D96A9E;
+    --secondary-color: #615C62;
+    --background-color: #101e5a;
+    --background: #EBEBEB;
+    --text-color: #333;
+    --color: #fff;
+}
+
+/* General Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+/* Left Column */
+.left-column {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.left-column .section {
+    margin-bottom: 2rem;
+}
+
+.left-column h2 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.3rem;
+}
+
+.left-column h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+
+.left-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.left-column ul li {
+    margin-bottom: 0.4rem;
+}
+
+/* Right Column */
+.right-column {
+    width: 70%;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section p {
+    text-align: justify;
+}
+
+.job h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.job p {
+    margin: 0.3rem 0;
+    font-style: italic;
+}
+
+.job ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.job ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    font-size: 0.9rem;
+    color: var(--color);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edu-box {
+    background-color: var(--background);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+}
