@@ -232,6 +232,55 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+@media print {
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: white;
+    }
+
+    header {
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: none;
+        box-shadow: none !important;
+    }
+
+    .profile-pic {
+        box-shadow: none !important;
+    }
+
+    header h1,
+    header p {
+        color: #000;
+    }
+
+    nav,
+    footer {
+        display: none;
+    }
+
+
+    .timeline-event,
+    .edu-box,
+    .section,
+    .book-thumb,
+    .left-column,
+    .right-column {
+        box-shadow: none !important;
+        border: none;
+        ;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
