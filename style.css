@@ -1,10 +1,11 @@
 :root {
     --primary-color: #D96A9E;
     --secondary-color: #615C62;
-    --background-color: #101e5a;
+    --background-color: #E58EAA;
     --background: #EBEBEB;
     --text-color: #333;
     --color: #fff;
+    --circle-border-color: #EBEBEB;
 }
 
 /* General Reset and Base Styles */
@@ -23,8 +24,8 @@ body {
 
 /* Header */
 header {
-    background: var(--primary-color);
-    color: white;
+    background: var(--background-color);
+    color: var(--text-color);
     text-align: center;
     padding: 2rem 1rem;
 }
@@ -142,11 +143,11 @@ footer {
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid white;
+    border: 3px solid var(--circle-border-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
