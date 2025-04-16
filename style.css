@@ -292,6 +292,11 @@ footer {
     .right-column {
         width: 100%;
     }
+
+    .timeline-event,
+    .timeline-event h3 {
+        font-size: 0.6rem;
+    }
 }
 
 @media (max-width: 600px) {
