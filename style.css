@@ -172,18 +172,17 @@ footer {
 .section .timeline {
     width: 90%;
     margin-top: 1rem;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
 .timeline-horizontal {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     overflow-x: auto;
-    gap: 0.25rem;
+    gap: 1rem;
     padding: 1rem 0;
-    scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    /* Firefox */
-    justify-content: center;
 }
 
 .timeline-horizontal::-webkit-scrollbar {
@@ -192,15 +191,16 @@ footer {
 }
 
 .timeline-event {
-    flex: 0 0 160px;
-    font-size: 0.70rem;
+    flex: 1 1 200px;
+    /* grow/shrink, base width */
+    max-width: 250px;
+    font-size: 0.75rem;
     background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 0.5rem;
+    padding: 1rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     text-align: center;
-    scroll-snap-align: start;
 }
 
 .timeline-event .event-date {
@@ -291,5 +291,12 @@ footer {
     .left-column,
     .right-column {
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .timeline-event {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
