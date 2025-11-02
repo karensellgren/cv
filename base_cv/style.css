@@ -320,7 +320,7 @@ header p {
 }
 
 .left-column .section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .left-column h2 {
@@ -526,7 +526,7 @@ footer {
 
     /* *** THIS IS THE COMPLETE FIX *** */
     .left-column ul {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(1, minmax(0, 1fr));
         list-style-position: inside;
         /* Fix 1: Helps grid calculation */
     }
@@ -725,17 +725,17 @@ footer {
         flex-direction: row;
         /* 2-column layout */
         width: 100%;
-        margin: 0.5rem auto;
+        margin: 0.5rem;
         padding: 0 0.5rem;
         gap: 0.5rem;
     }
 
     .left-column {
         width: 30%;
-        padding: 1rem;
+        padding: 2rem;
         border-radius: 15px;
         border: #F6BFC6 1px solid;
-        margin-top: 0rem;
+        margin: 0rem;
         /* Keep the top margin */
     }
 
@@ -755,16 +755,16 @@ footer {
     .left-column h2,
     .section h2 {
         color: #ffffff;
-        border-bottom: 2px solid #E58EAA;
+        border-bottom: 1px solid #E58EAA;
     }
 
-    Nothing has changed. .left-column h3 {
+    .left-column h3 {
         color: #ffffff;
     }
 
     /* *** THIS IS THE PRINT STYLES FIX *** */
     .left-column ul {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(1, minmax(0, 1fr));
         /* Use minmax */
         font-size: 0.85rem;
         list-style-position: inside;
