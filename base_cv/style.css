@@ -36,14 +36,15 @@ body {
 
 /* --- Header --- */
 header {
-    text-align: center;
+    text-align: left;
     padding-bottom: 2rem;
+    padding-left: 2rem;
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 1.5rem;
     flex-wrap: wrap;
     /* Allow wrapping on small screens */
@@ -88,6 +89,11 @@ header p {
 @media (max-width: 767px) {
     .header-text {
         text-align: center;
+
+    }
+
+    .header-content {
+        justify-content: center;
     }
 }
 
@@ -625,7 +631,12 @@ footer {
 
     /* --- Header (Use print-friendly colors) --- */
     header {
+        padding-top: 10px;
         padding-bottom: 1rem;
+    }
+
+    .header-content {
+        justify-content: left;
     }
 
     .profile-pic {
@@ -637,6 +648,7 @@ footer {
     header p,
     .contact-info {
         color: var(--text-color);
+        text-align: left;
     }
 
     /* --- Timeline (Force 1201px+ Layout) --- */
